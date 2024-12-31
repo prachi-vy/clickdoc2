@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Doctor - ClickDoc</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('vid2.avif'); /* Light background image */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header {
+            background-color: rgba(44, 179, 184, 0.6);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .search-section {
+            margin: 50px auto;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-section h2 {
+            color: #2cb3b8;
+            text-align: center;
+        }
+
+        .search-section input, .search-section select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .search-section button {
+            background-color: #24a2a7;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .search-section button:hover {
+            background-color: #1c8c91;
+        }
+
+        .doctor-list {
+            margin: 30px auto;
+            max-width: 800px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .doctor-item {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .doctor-item:last-child {
+            border-bottom: none;
+        }
+
+        .doctor-item h4 {
+            color: #2cb3b8;
+        }
+
+        .footer {
+            background-color: rgba(44, 179, 184, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 50px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Find Your Doctor</h1>
+        <p>Search and connect with top medical professionals</p>
+    </div>
+
+    <div class="search-section">
+        <h2>Search for Doctors</h2>
+        <form action="doctor-results.html" method="GET">
+            <label for="specialization">Specialization:</label>
+            <select id="specialization" name="specialization" required>
+                <option value="" disabled selected>Select a specialization</option>
+                <option value="general">General Physician</option>
+                <option value="cardiologist">Cardiologist</option>
+                <option value="dermatologist">Dermatologist</option>
+                <option value="pediatrician">Pediatrician</option>
+                <option value="psychiatrist">Psychiatrist</option>
+            </select>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Enter your city" required>
+
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div class="doctor-list">
+        <h2>Featured Doctors</h2>
+        <div class="doctor-item">
+            <h4>Dr. Priya Sharma</h4>
+            <p>Cardiologist, Mumbai</p>
+        </div>
+        <div class="doctor-item">
+            <h4>Dr. Ramesh Gupta</h4>
+            <p>General Physician, Delhi</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Contact Us: contact@clickdoc.com</p>
+        <p>Follow Us: <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a></p>
+        <p>&copy; 2024 ClickDoc. All rights reserved.</p>
+    </div>
+</body>
+</html>

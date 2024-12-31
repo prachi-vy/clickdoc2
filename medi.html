@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Medicine - ClickDoc</title>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('vid2.avif'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header {
+            background-color: rgba(44, 179, 184, 0.6);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .form-section {
+            margin: 30px auto;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section h2 {
+            color: #2cb3b8;
+            text-align: center;
+        }
+
+        .form-section input, .form-section select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-section button {
+            background-color: #24a2a7;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .form-section button:hover {
+            background-color: #1c8c91;
+        }
+
+        .medicine-list {
+            margin: 30px auto;
+            max-width: 800px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+        }
+
+        .medicine-item {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .medicine-item:last-child {
+            border-bottom: none;
+        }
+
+        .medicine-item h4 {
+            color: #2cb3b8;
+        }
+
+        .footer {
+            background-color: #2cb3b8;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Order medicine</h1>
+    </div>
+
+    <div class="form-section">
+        <h2>Search for medicine</h2>
+        <form >
+            <label for="medicine-name">Medicine Name:</label>
+            <input type="text" id="medicine-name" name="medicine-name" placeholder="Enter vaccine name" required>
+
+            <label for="date">Quantity</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" required>
+
+            
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+    <div class="medicine-list">
+        <h2>Popular medicine</h2>
+        <div class="medicine-item">
+            <h4>Paracetamol</h4>
+            <p>Paracetamol is a medicine used to treat mild to moderate pain.</p>
+        </div>
+        <div class="medicine-item">
+            <h4>Combiflame</h4>
+            <p>Combiflam is a widely used drug prescribed to reduce pain and inflammation. </p>
+        </div>
+        <div class="medicine-item">
+            <h4>ACLOQ 150</h4>
+            <p> Aciloc 150 Tablet is used to treat indigestion, heartburn and acid reflux.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Contact Us: contact@clickdoc.com</p>
+        <p>Follow Us: <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a></p>
+        <p>&copy; 2024 ClickDoc. All rights reserved.</p>
+    </div>
+</body>
+</html>

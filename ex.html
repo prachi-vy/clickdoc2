@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickDoc</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Simple Background */
+        .bkd {
+            background-color: #f0f8ff; 
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #24a2a7;
+            padding: 10px;
+        }
+        
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            background-color: #1c8c91;
+        }
+
+        .for {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .for h1 {
+            font-size: 30px;
+            color: #2cb3b8;
+        }
+
+        .for h2 {
+            font-size: 20px;
+            color: #333;
+        }
+
+        button {
+            background-color: #24a2a7;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #1c8c91;
+        }
+
+        /* Simple Content Section */
+        .main {
+            padding: 20px;
+            background-color: #ffffff;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .main h1 {
+            text-align: center;
+        }
+
+        .about-section {
+            text-align: center;
+            background-color: #b4e2e4;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .about-section p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* Offer Section */
+        .offer {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .offer-container {
+            display: block;
+        }
+
+        .offer-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            display: inline-block;
+            width: 45%;
+            text-align: center;
+        }
+
+        .offer-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Testimonial Section */
+        .testimonial {
+            margin-top: 40px;
+        }
+
+        .testimonial h2 {
+            text-align: center;
+        }
+
+        .review {
+            margin: 20px;
+            padding: 15px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        /* Easy Steps Section */
+        .easy-steps {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .step {
+            display: inline-block;
+            width: 30%;
+            padding: 10px;
+            margin: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .step i {
+            font-size: 24px;
+            color: #24a2a7;
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            font-size: 14px;
+        }
+
+        /* Sign In Form */
+        .form-container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        .form-container input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-container button {
+            background-color: #24a2a7;
+            color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: #24a2a7;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bkd">
+        <header>
+            <nav>
+                <a href="ordermedi.html">Order Medicine</a>
+                <a href="video.html">Video Consultation</a>
+                <a href="#about">About Us</a>
+                <a href="find your doctor.html">Find Your Doctor</a>
+                <a href="home.html">Home</a>
+            </nav>
+        </header>
+
+        <div class="for">
+            <h1>NOW DOCTOR IS ONE CLICK AWAY</h1>
+            <h2>Talk to experts at just ₹199</h2>
+            <button>Book Now</button>
+        </div>
+    </div>
+
+    <div id="about" class="main">
+        <h1 class="abt2">ABOUT</h1>
+        <div class="about-section">
+            <p>ClickDoc is an online platform that allows you to connect with medical experts easily. You can consult doctors via video calls and order medicines online, all from the comfort of your home.</p>
+        </div>
+
+        <div class="offer">
+            <h2>Exciting Offers</h2>
+            <div class="offer-container">
+                <div class="offer-item">
+                    <img src="doctor.jpg" alt="Doctor Offer">
+                    <h3>20% off on Video Consultations</h3>
+                    <p>Get a discount on your first video consultation.</p>
+                </div>
+                <div class="offer-item">
+                    <img src="medicine.jpeg" alt="Medicine Offer">
+                    <h3>Free Delivery of Medicines</h3>
+                    <p>Enjoy free delivery on medicine orders above ₹500.</p>
+                </div>
+                <div class="offer-item">
+                    <img src="" alt="Medicine Offer">
+                    <h3>Free Delivery of Medicines</h3>
+                    <p>Enjoy free delivery on medicine orders above ₹500.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <p>"Great service, very convenient."</p>
+                <p>- Sumit</p>
+            </div>
+            <div class="review">
+                <p>"Fast delivery and excellent doctor consultation."</p>
+                <p>- Raj</p>
+            </div>
+        </div>
+
+        <div class="easy-steps">
+            <h2>How It Works</h2>
+            <div class="step">
+                <i class="fa fa-user-circle"></i>
+                <p>Sign Up</p>
+            </div>
+            <div class="step">
+                <i class="fa fa-user-edit"></i>
+                <p>Enter Info</p>
+            </div>
+            <div class="step">
+                <i class="fa fa-map-marker-alt"></i>
+                <p>Select City</p>
+            </div>
+            <div class="step">
+                <i class="fa fa-user-md"></i>
+                <p>Choose Doctor</p>
+            </div>
+            <div class="step">
+                <i class="fa fa-calendar-check"></i>
+                <p>Book Appointment</p>
+            </div>
+            <div class="step">
+                <i class="fa fa-credit-card"></i>
+                <p>Pay</p>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h2>Sign In</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Name" required><br>
+                <input type="number" name="age" placeholder="Age" required><br>
+                <input type="tel" name="phone" placeholder="Phone" required><br>
+                <input type="text" name="city" placeholder="City" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Contact Us: contact@clickdoc.com</p>
+        <p>Follow Us: <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a></p>
+        <
